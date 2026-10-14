@@ -1,0 +1,238 @@
+```css
+/* WooCommerce CRM - Complete Dashboard Styling */
+
+:root {
+  --primary: #635bff;
+  --dark: #171b35;
+  --background: #f4f6fc;
+  --white: #ffffff;
+  --text: #252944;
+  --muted: #7b8199;
+  --border: #e7e9f2;
+  --green: #16a36a;
+  --red: #e5484d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+h1, h2, h3 {
+  color: var(--text);
+  font-weight: 700;
+}
+
+p {
+  color: var(--muted);
+}
+
+/* Sidebar */
+.sidebar {
+  background: linear-gradient(180deg, #171b35, #292e52);
+  color: white;
+}
+
+.sidebar a,
+.sidebar button {
+  color: #d1d5e8;
+  transition: 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 8px;
+}
+
+/* Main content */
+.main-content,
+.content {
+  background: var(--background);
+  padding: 25px;
+}
+
+/* Cards and panels */
+.card,
+.panel,
+.stat-card,
+.stats-card,
+.statistic-card,
+.dashboard-card,
+.table-container {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(30, 35, 70, 0.05);
+  transition: 0.2s;
+}
+
+.card:hover,
+.stat-card:hover,
+.stats-card:hover,
+.statistic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 25px rgba(30, 35, 70, 0.09);
+}
+
+/* Buttons */
+button,
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[type="submit"],
+.btn-primary,
+.primary-button {
+  background: linear-gradient(135deg, #766dff, #5146e5);
+  color: white;
+}
+
+button[type="submit"]:hover,
+.btn-primary:hover,
+.primary-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button.edit,
+.btn-edit {
+  background: #eeedff;
+  color: #5548df;
+}
+
+button.delete,
+.btn-delete {
+  background: #fff0f0;
+  color: #d9363e;
+}
+
+/* Forms */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 13px;
+  margin: 5px 0 12px;
+  border: 1px solid #dfe2ed;
+  border-radius: 8px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.12);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+thead {
+  background: #f7f8fc;
+}
+
+th {
+  padding: 14px;
+  text-align: left;
+  color: #6d7390;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f1f6;
+  color: #424760;
+}
+
+tbody tr:hover {
+  background: #fafaff;
+}
+
+/* Status badges */
+.status,
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.active,
+.badge.active {
+  background: #e4f8ee;
+  color: #138653;
+}
+
+.status.draft,
+.badge.draft {
+  background: #fff4d8;
+  color: #9b6a00;
+}
+
+.status.archived,
+.badge.archived {
+  background: #f0f1f5;
+  color: #686e82;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4035ce;
+}
+
+/* Search */
+.search-input {
+  max-width: 360px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content,
+  .content {
+    padding: 14px;
+  }
+
+  .card,
+  .panel,
+  .dashboard-card,
+  .table-container {
+    padding: 14px;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+```
